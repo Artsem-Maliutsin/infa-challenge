@@ -1,0 +1,4 @@
+---
+pathToConfigVM: /opt/default.conf
+pathToConfigContainer: /etc/nginx/conf.d/default.conf
+# defaults file for proxy_configure

@@ -1,0 +1,5 @@
+---
+appImageName: "nginx:stable"
+vmHostPort: 80
+containerPort: 80
+backendPort: 4000

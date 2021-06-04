@@ -1,0 +1,29 @@
+---
+- hosts: all
+  become: true
+  gather_facts: false
+  tasks:
+    -
+      name: "include role common"
+      include_role:
+        name: common
+- hosts: workers
+  become: true
+  gather_facts: false
+  vars_files:
+    - ../group_vars/workers.yml
+  tasks:
+    -
+      name: "include role worker configure"
+      include_role:
+        name: worker_configure
+- hosts: proxy
+  become: true
+  gather_facts: false
+  vars_files:
+    - ../group_vars/proxy.yml
+  tasks:
+    -
+      name: "include role proxy configure"
+      include_role:
+        name: proxy_configure

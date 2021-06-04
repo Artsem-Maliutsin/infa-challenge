@@ -1,0 +1,6 @@
+---
+- name: restart docker compose
+  community.docker.docker_compose:
+    project_src: /opt/
+    restarted: yes
+# handlers file for proxy_configure

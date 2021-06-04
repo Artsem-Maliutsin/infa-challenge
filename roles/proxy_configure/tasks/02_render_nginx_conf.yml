@@ -1,0 +1,7 @@
+---
+- name: render nginx file
+  template:
+    src: nginx.j2
+    dest: /opt/default.conf
+  notify:
+    - restart docker compose

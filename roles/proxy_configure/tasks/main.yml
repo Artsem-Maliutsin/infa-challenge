@@ -1,0 +1,11 @@
+---
+-
+  name: render docker compose
+  include: 01_render_docker_compose.yml
+-
+  name: render docker compose
+  include: 02_render_nginx_conf.yml
+-
+  name: render docker compose
+  include: 03_run_docker_compose.yml
+# tasks file for proxyConfigure

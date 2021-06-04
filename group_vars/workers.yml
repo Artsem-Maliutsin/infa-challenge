@@ -1,0 +1,4 @@
+---
+appImageName: "registry.gitlab.com/salamachinas/infra-challenge:latest"
+vmHostPort: 4000
+containerPort: 4000

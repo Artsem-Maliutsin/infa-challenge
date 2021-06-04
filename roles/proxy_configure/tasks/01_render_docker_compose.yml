@@ -1,0 +1,4 @@
+- name: render docker compose file
+  template:
+    src: docker-compose.j2
+    dest: /opt/docker-compose.yml
